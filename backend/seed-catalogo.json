@@ -1,0 +1,2106 @@
+[
+  {
+    "id": "pr000",
+    "tipo": "Administrativos",
+    "servicio": "Admisión y Estadística Requerido",
+    "prestacion": "Proveer servicios de atención al usuario para facilitar la accesibilidad al establecimiento de salud",
+    "sub": "",
+    "label": "Admisión y Estadística Requerido › Proveer servicios de atención al usuario para facilitar la accesibilidad al establecimiento de salud"
+  },
+  {
+    "id": "pr001",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas básicas",
+    "sub": "Pruebas de Coproanalisis",
+    "label": "Diagnóstico en Laboratorio › Pruebas básicas › Pruebas de Coproanalisis"
+  },
+  {
+    "id": "pr002",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas básicas",
+    "sub": "Pruebas de Hematología",
+    "label": "Diagnóstico en Laboratorio › Pruebas básicas › Pruebas de Hematología"
+  },
+  {
+    "id": "pr003",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas básicas",
+    "sub": "Pruebas de Hemostasia",
+    "label": "Diagnóstico en Laboratorio › Pruebas básicas › Pruebas de Hemostasia"
+  },
+  {
+    "id": "pr004",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas básicas",
+    "sub": "Pruebas de Química Clínica",
+    "label": "Diagnóstico en Laboratorio › Pruebas básicas › Pruebas de Química Clínica"
+  },
+  {
+    "id": "pr005",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas básicas",
+    "sub": "Pruebas de Serología",
+    "label": "Diagnóstico en Laboratorio › Pruebas básicas › Pruebas de Serología"
+  },
+  {
+    "id": "pr006",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Electrolitos",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Electrolitos"
+  },
+  {
+    "id": "pr007",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Gasometria",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Gasometria"
+  },
+  {
+    "id": "pr008",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Biología Molecular",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Biología Molecular"
+  },
+  {
+    "id": "pr009",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Genética",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Genética"
+  },
+  {
+    "id": "pr010",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Inmunología",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Inmunología"
+  },
+  {
+    "id": "pr011",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Inmunoquímica",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Inmunoquímica"
+  },
+  {
+    "id": "pr012",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Microbiología baja, mediana y de alta complejidad",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Microbiología baja, mediana y de alta complejidad"
+  },
+  {
+    "id": "pr013",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas de Tuberculosis",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas de Tuberculosis"
+  },
+  {
+    "id": "pr014",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Pruebas Toxicológicas (Drogas/Farmacos)",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Pruebas Toxicológicas (Drogas/Farmacos)"
+  },
+  {
+    "id": "pr015",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Pruebas Especiales",
+    "sub": "Tamizaje metabólico Neonatal",
+    "label": "Diagnóstico en Laboratorio › Pruebas Especiales › Tamizaje metabólico Neonatal"
+  },
+  {
+    "id": "pr016",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Estudios de Citología",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Estudios de Citología"
+  },
+  {
+    "id": "pr017",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Estudios de Citoquímica",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Estudios de Citoquímica"
+  },
+  {
+    "id": "pr018",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Estudios de histoquímica",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Estudios de histoquímica"
+  },
+  {
+    "id": "pr019",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Estudios de Inmunohistoquímica",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Estudios de Inmunohistoquímica"
+  },
+  {
+    "id": "pr020",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Estudios histológicos de rutina",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Estudios histológicos de rutina"
+  },
+  {
+    "id": "pr021",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Manejo de Cadáveres",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Manejo de Cadáveres"
+  },
+  {
+    "id": "pr022",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Patología Molecular",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Patología Molecular"
+  },
+  {
+    "id": "pr023",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Procuración de Tejidos",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Procuración de Tejidos"
+  },
+  {
+    "id": "pr024",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico en Laboratorio",
+    "prestacion": "Anatomía Patológica",
+    "sub": "Tamizaje metabólico Neonatal",
+    "label": "Diagnóstico en Laboratorio › Anatomía Patológica › Tamizaje metabólico Neonatal"
+  },
+  {
+    "id": "pr025",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Angiografía",
+    "sub": "",
+    "label": "Diagnóstico por Radiología e Imagen › Angiografía"
+  },
+  {
+    "id": "pr026",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Densitometría ósea",
+    "sub": "",
+    "label": "Diagnóstico por Radiología e Imagen › Densitometría ósea"
+  },
+  {
+    "id": "pr027",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Ecografía",
+    "sub": "Ecocardiograma",
+    "label": "Diagnóstico por Radiología e Imagen › Ecografía › Ecocardiograma"
+  },
+  {
+    "id": "pr028",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Ecografía",
+    "sub": "Ecodoppler renal",
+    "label": "Diagnóstico por Radiología e Imagen › Ecografía › Ecodoppler renal"
+  },
+  {
+    "id": "pr029",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Ecografía",
+    "sub": "Ecografía convencional",
+    "label": "Diagnóstico por Radiología e Imagen › Ecografía › Ecografía convencional"
+  },
+  {
+    "id": "pr030",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Ecografía",
+    "sub": "Ecografía doppler, 3D o 4D",
+    "label": "Diagnóstico por Radiología e Imagen › Ecografía › Ecografía doppler, 3D o 4D"
+  },
+  {
+    "id": "pr031",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Ecografía",
+    "sub": "Procedimientos de intervencionismos dirigidos con ecografía",
+    "label": "Diagnóstico por Radiología e Imagen › Ecografía › Procedimientos de intervencionismos dirigidos con ecografía"
+  },
+  {
+    "id": "pr032",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Fluoroscopía",
+    "sub": "",
+    "label": "Diagnóstico por Radiología e Imagen › Fluoroscopía"
+  },
+  {
+    "id": "pr033",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Mamografía digital o digitalizada",
+    "sub": "",
+    "label": "Diagnóstico por Radiología e Imagen › Mamografía digital o digitalizada"
+  },
+  {
+    "id": "pr034",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Radiografía",
+    "sub": "Radiografía convencional",
+    "label": "Diagnóstico por Radiología e Imagen › Radiografía › Radiografía convencional"
+  },
+  {
+    "id": "pr035",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Radiografía",
+    "sub": "Radiografía especial contrastada",
+    "label": "Diagnóstico por Radiología e Imagen › Radiografía › Radiografía especial contrastada"
+  },
+  {
+    "id": "pr036",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Radiografía",
+    "sub": "Radiología Panorámica dental",
+    "label": "Diagnóstico por Radiología e Imagen › Radiografía › Radiología Panorámica dental"
+  },
+  {
+    "id": "pr037",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Resonancia Magnética",
+    "sub": "Resonancia Magnética nuclear contrastada",
+    "label": "Diagnóstico por Radiología e Imagen › Resonancia Magnética › Resonancia Magnética nuclear contrastada"
+  },
+  {
+    "id": "pr038",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Resonancia Magnética",
+    "sub": "Resonancia Magnética nuclear simple",
+    "label": "Diagnóstico por Radiología e Imagen › Resonancia Magnética › Resonancia Magnética nuclear simple"
+  },
+  {
+    "id": "pr039",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Tomografía",
+    "sub": "Tomografía axial computarizada contrastada",
+    "label": "Diagnóstico por Radiología e Imagen › Tomografía › Tomografía axial computarizada contrastada"
+  },
+  {
+    "id": "pr040",
+    "tipo": "Apoyo Diagnóstico",
+    "servicio": "Diagnóstico por Radiología e Imagen",
+    "prestacion": "Tomografía",
+    "sub": "Tomografía axial computarizada simple- multicorte de 16 cortes en adelante",
+    "label": "Diagnóstico por Radiología e Imagen › Tomografía › Tomografía axial computarizada simple- multicorte de 16 cortes en adelante"
+  },
+  {
+    "id": "pr041",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "fistulas colovesicales",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › fistulas colovesicales"
+  },
+  {
+    "id": "pr042",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "rectocele",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › rectocele"
+  },
+  {
+    "id": "pr043",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "absceso anorectal",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › absceso anorectal"
+  },
+  {
+    "id": "pr044",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "cierre de ostomias o restituciòn de transito instetinal (Colostomias)",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › cierre de ostomias o restituciòn de transito instetinal (Colostomias)"
+  },
+  {
+    "id": "pr045",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "cirugia de colon recto y ano",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › cirugia de colon recto y ano"
+  },
+  {
+    "id": "pr046",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "cirugias de emergencias coloproctologicas",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › cirugias de emergencias coloproctologicas"
+  },
+  {
+    "id": "pr047",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "diverticulos",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › diverticulos"
+  },
+  {
+    "id": "pr048",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "fistula anal",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › fistula anal"
+  },
+  {
+    "id": "pr049",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "fistulascolovaginales",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › fistulascolovaginales"
+  },
+  {
+    "id": "pr050",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "fisura anal",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › fisura anal"
+  },
+  {
+    "id": "pr051",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "Hemorroides",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › Hemorroides"
+  },
+  {
+    "id": "pr052",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "prolapso rectal",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › prolapso rectal"
+  },
+  {
+    "id": "pr053",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "COLOPROCTOLOGIA",
+    "sub": "tumores de colon recto y ano,",
+    "label": "Atención en Centro quirúrgico › COLOPROCTOLOGIA › tumores de colon recto y ano,"
+  },
+  {
+    "id": "pr054",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "Cirugía General",
+    "sub": "Cirugía Laparoscópica",
+    "label": "Atención en Centro quirúrgico › Cirugía General › Cirugía Laparoscópica"
+  },
+  {
+    "id": "pr055",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "Cirugía Mayor Ambulatoria",
+    "sub": "",
+    "label": "Atención en Centro quirúrgico › Cirugía Mayor Ambulatoria"
+  },
+  {
+    "id": "pr056",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "Cirugia Urologica",
+    "sub": "Vasectomia",
+    "label": "Atención en Centro quirúrgico › Cirugia Urologica › Vasectomia"
+  },
+  {
+    "id": "pr057",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro quirúrgico",
+    "prestacion": "Trasplantes",
+    "sub": "",
+    "label": "Atención en Centro quirúrgico › Trasplantes"
+  },
+  {
+    "id": "pr058",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Audiometría",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Audiometría"
+  },
+  {
+    "id": "pr059",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Ecografias",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Ecografias"
+  },
+  {
+    "id": "pr060",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Electrocardiograma",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Electrocardiograma"
+  },
+  {
+    "id": "pr061",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Electroencefalograma",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Electroencefalograma"
+  },
+  {
+    "id": "pr062",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Electromiografía",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Electromiografía"
+  },
+  {
+    "id": "pr063",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Emisiones otoacusticas",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Emisiones otoacusticas"
+  },
+  {
+    "id": "pr064",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Holter",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Holter"
+  },
+  {
+    "id": "pr065",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Mamografia",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Mamografia"
+  },
+  {
+    "id": "pr066",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "MAPA (Monitoreo ambulatorio de presión arterial)",
+    "sub": "",
+    "label": "Pruebas diagnósticas › MAPA (Monitoreo ambulatorio de presión arterial)"
+  },
+  {
+    "id": "pr067",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Polisomnografía",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Polisomnografía"
+  },
+  {
+    "id": "pr068",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Potencial de evocados",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Potencial de evocados"
+  },
+  {
+    "id": "pr069",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas de esfuerzo",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Pruebas de esfuerzo"
+  },
+  {
+    "id": "pr070",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas de Funcionalidad Pulmonar",
+    "sub": "Espirometria",
+    "label": "Pruebas diagnósticas › Pruebas de Funcionalidad Pulmonar › Espirometria"
+  },
+  {
+    "id": "pr071",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas de Funcionalidad Pulmonar",
+    "sub": "Pruebas de Difusión Pulmonar",
+    "label": "Pruebas diagnósticas › Pruebas de Funcionalidad Pulmonar › Pruebas de Difusión Pulmonar"
+  },
+  {
+    "id": "pr072",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas de Funcionalidad Pulmonar",
+    "sub": "Pruebas de Volumenes Pulmonares",
+    "label": "Pruebas diagnósticas › Pruebas de Funcionalidad Pulmonar › Pruebas de Volumenes Pulmonares"
+  },
+  {
+    "id": "pr073",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas Oftalmicas",
+    "sub": "Angiografía",
+    "label": "Pruebas diagnósticas › Pruebas Oftalmicas › Angiografía"
+  },
+  {
+    "id": "pr074",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas Oftalmicas",
+    "sub": "Campimetría",
+    "label": "Pruebas diagnósticas › Pruebas Oftalmicas › Campimetría"
+  },
+  {
+    "id": "pr075",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas Oftalmicas",
+    "sub": "Ecografía oftalmica",
+    "label": "Pruebas diagnósticas › Pruebas Oftalmicas › Ecografía oftalmica"
+  },
+  {
+    "id": "pr076",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas Oftalmicas",
+    "sub": "Potencial de evocados visuales",
+    "label": "Pruebas diagnósticas › Pruebas Oftalmicas › Potencial de evocados visuales"
+  },
+  {
+    "id": "pr077",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Pruebas Oftalmicas",
+    "sub": "Tomografía de coherencia óptica",
+    "label": "Pruebas diagnósticas › Pruebas Oftalmicas › Tomografía de coherencia óptica"
+  },
+  {
+    "id": "pr078",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Tomografia",
+    "sub": "Con o Sin contraste",
+    "label": "Pruebas diagnósticas › Tomografia › Con o Sin contraste"
+  },
+  {
+    "id": "pr079",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Urodinamia",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Urodinamia"
+  },
+  {
+    "id": "pr080",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Urolectromiografía Condición",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Urolectromiografía Condición"
+  },
+  {
+    "id": "pr081",
+    "tipo": "Apoyo de diagnóstico",
+    "servicio": "Pruebas diagnósticas",
+    "prestacion": "Video electroencefalografía",
+    "sub": "",
+    "label": "Pruebas diagnósticas › Video electroencefalografía"
+  },
+  {
+    "id": "pr082",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Atención aislados",
+    "sub": "",
+    "label": "Atención en Terapia Intensiva › Atención aislados"
+  },
+  {
+    "id": "pr083",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Atención en Cuidados críticos",
+    "sub": "Atención en Cuidados críticos de Adultos",
+    "label": "Atención en Terapia Intensiva › Atención en Cuidados críticos › Atención en Cuidados críticos de Adultos"
+  },
+  {
+    "id": "pr084",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Atención en Cuidados críticos",
+    "sub": "Atención en Cuidados críticos pediátricos Condición",
+    "label": "Atención en Terapia Intensiva › Atención en Cuidados críticos › Atención en Cuidados críticos pediátricos Condición"
+  },
+  {
+    "id": "pr085",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Atención en cuidados intermedios",
+    "sub": "Atención en cuidados intermedios pediátricos Condición",
+    "label": "Atención en Terapia Intensiva › Atención en cuidados intermedios › Atención en cuidados intermedios pediátricos Condición"
+  },
+  {
+    "id": "pr086",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Atención en cuidados intermedios",
+    "sub": "Atención en cuidados intermedios de adultos",
+    "label": "Atención en Terapia Intensiva › Atención en cuidados intermedios › Atención en cuidados intermedios de adultos"
+  },
+  {
+    "id": "pr087",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Neonatología",
+    "sub": "Aislados",
+    "label": "Atención en Terapia Intensiva › Neonatología › Aislados"
+  },
+  {
+    "id": "pr088",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Neonatología",
+    "sub": "Cuidados Básicos",
+    "label": "Atención en Terapia Intensiva › Neonatología › Cuidados Básicos"
+  },
+  {
+    "id": "pr089",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Neonatología",
+    "sub": "Cuidados Intensivos",
+    "label": "Atención en Terapia Intensiva › Neonatología › Cuidados Intensivos"
+  },
+  {
+    "id": "pr090",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Atención en Terapia Intensiva",
+    "prestacion": "Neonatología",
+    "sub": "Cuidados Intermedios Requerido",
+    "label": "Atención en Terapia Intensiva › Neonatología › Cuidados Intermedios Requerido"
+  },
+  {
+    "id": "pr091",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Medicina Nuclear",
+    "prestacion": "Medicina Nuclear diagnóstica",
+    "sub": "Gammagrafía",
+    "label": "Medicina Nuclear › Medicina Nuclear diagnóstica › Gammagrafía"
+  },
+  {
+    "id": "pr092",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Medicina Nuclear",
+    "prestacion": "Medicina Nuclear diagnóstica",
+    "sub": "Tomografía computarizada por emisión monofotónica Condición",
+    "label": "Medicina Nuclear › Medicina Nuclear diagnóstica › Tomografía computarizada por emisión monofotónica Condición"
+  },
+  {
+    "id": "pr093",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Medicina Nuclear",
+    "prestacion": "Medicina Nuclear diagnóstica",
+    "sub": "Tomografía computarizada por emisión positrones",
+    "label": "Medicina Nuclear › Medicina Nuclear diagnóstica › Tomografía computarizada por emisión positrones"
+  },
+  {
+    "id": "pr094",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Medicina Nuclear",
+    "prestacion": "Medicina Nuclear terapéutica",
+    "sub": "",
+    "label": "Medicina Nuclear › Medicina Nuclear terapéutica"
+  },
+  {
+    "id": "pr095",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Agregar otros",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Agregar otros"
+  },
+  {
+    "id": "pr096",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Artroscopia",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Artroscopia"
+  },
+  {
+    "id": "pr097",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Broncoscopia",
+    "sub": "Broncoscopia diagnóstica Adultos/Pediátrica",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Broncoscopia › Broncoscopia diagnóstica Adultos/Pediátrica"
+  },
+  {
+    "id": "pr098",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Colangiopancreotografía retrógrada endoscópica",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Colangiopancreotografía retrógrada endoscópica"
+  },
+  {
+    "id": "pr099",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Colposcopia",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Colposcopia"
+  },
+  {
+    "id": "pr100",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Ecosonografía transesofágica",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Ecosonografía transesofágica"
+  },
+  {
+    "id": "pr101",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Electroestimulación transesofágica",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Electroestimulación transesofágica"
+  },
+  {
+    "id": "pr102",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Endoscopia digestiva alta",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Endoscopia digestiva alta"
+  },
+  {
+    "id": "pr103",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Endoscopia digestiva baja",
+    "sub": "Proctoscopia",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Endoscopia digestiva baja › Proctoscopia"
+  },
+  {
+    "id": "pr104",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Endoscopia urológica",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Endoscopia urológica"
+  },
+  {
+    "id": "pr105",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Hemodinamia",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Hemodinamia"
+  },
+  {
+    "id": "pr106",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Toracoscopia Condición",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Toracoscopia Condición"
+  },
+  {
+    "id": "pr107",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Broncoscopia Terapéutica Adultos/Pediátrica",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Broncoscopia Terapéutica Adultos/Pediátrica"
+  },
+  {
+    "id": "pr108",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Colonoscopia",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Colonoscopia"
+  },
+  {
+    "id": "pr109",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Procedimientos diagnósticos y/o terapéuticos invasivos",
+    "prestacion": "Rectosigmoidoscopia",
+    "sub": "",
+    "label": "Procedimientos diagnósticos y/o terapéuticos invasivos › Rectosigmoidoscopia"
+  },
+  {
+    "id": "pr110",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Provisión de Leche Humana",
+    "prestacion": "Consejería en lactancia materna",
+    "sub": "",
+    "label": "Provisión de Leche Humana › Consejería en lactancia materna"
+  },
+  {
+    "id": "pr111",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Provisión de Leche Humana",
+    "prestacion": "Distribución de la leche humana Condición",
+    "sub": "",
+    "label": "Provisión de Leche Humana › Distribución de la leche humana Condición"
+  },
+  {
+    "id": "pr112",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Provisión de Leche Humana",
+    "prestacion": "Extracción de leche humana",
+    "sub": "",
+    "label": "Provisión de Leche Humana › Extracción de leche humana"
+  },
+  {
+    "id": "pr113",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Provisión de Leche Humana",
+    "prestacion": "Procesamiento de Leche humana",
+    "sub": "",
+    "label": "Provisión de Leche Humana › Procesamiento de Leche humana"
+  },
+  {
+    "id": "pr114",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Provisión de Leche Humana",
+    "prestacion": "Recolección de Leche humana",
+    "sub": "",
+    "label": "Provisión de Leche Humana › Recolección de Leche humana"
+  },
+  {
+    "id": "pr115",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Audiometrias",
+    "sub": "",
+    "label": "Rehabilitación › Audiometrias"
+  },
+  {
+    "id": "pr116",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Estimulación Temprana",
+    "sub": "",
+    "label": "Rehabilitación › Estimulación Temprana"
+  },
+  {
+    "id": "pr117",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Otoemisiones Acusticas",
+    "sub": "",
+    "label": "Rehabilitación › Otoemisiones Acusticas"
+  },
+  {
+    "id": "pr118",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Psicorehabilitación",
+    "sub": "",
+    "label": "Rehabilitación › Psicorehabilitación"
+  },
+  {
+    "id": "pr119",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Taller de órtesis y prótesis",
+    "sub": "",
+    "label": "Rehabilitación › Taller de órtesis y prótesis"
+  },
+  {
+    "id": "pr120",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Auditiva",
+    "sub": "",
+    "label": "Rehabilitación › Terapia Auditiva"
+  },
+  {
+    "id": "pr121",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia del Lenguaje",
+    "sub": "",
+    "label": "Rehabilitación › Terapia del Lenguaje"
+  },
+  {
+    "id": "pr122",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Física",
+    "sub": "Electroterapia",
+    "label": "Rehabilitación › Terapia Física › Electroterapia"
+  },
+  {
+    "id": "pr123",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Física",
+    "sub": "Hidroterapia",
+    "label": "Rehabilitación › Terapia Física › Hidroterapia"
+  },
+  {
+    "id": "pr124",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Física",
+    "sub": "",
+    "label": "Rehabilitación › Terapia Física"
+  },
+  {
+    "id": "pr125",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Ocupacional",
+    "sub": "Cinesiterapia",
+    "label": "Rehabilitación › Terapia Ocupacional › Cinesiterapia"
+  },
+  {
+    "id": "pr126",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Rehabilitación",
+    "prestacion": "Terapia Respiratoria",
+    "sub": "",
+    "label": "Rehabilitación › Terapia Respiratoria"
+  },
+  {
+    "id": "pr127",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad Cardiovascular",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad Cardiovascular"
+  },
+  {
+    "id": "pr128",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad de Caídas",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad de Caídas"
+  },
+  {
+    "id": "pr129",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad de Incontinencia",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad de Incontinencia"
+  },
+  {
+    "id": "pr130",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad neuropsiquiátrica",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad neuropsiquiátrica"
+  },
+  {
+    "id": "pr131",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad Osteoarticular",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad Osteoarticular"
+  },
+  {
+    "id": "pr132",
+    "tipo": "Apoyo Diagnóstico y Terapéutico",
+    "servicio": "Unidad de Funcionalidad Ambulatoria Geriátrica",
+    "prestacion": "Recuperación Funcional",
+    "sub": "Unidad Respiratoria",
+    "label": "Unidad de Funcionalidad Ambulatoria Geriátrica › Recuperación Funcional › Unidad Respiratoria"
+  },
+  {
+    "id": "pr133",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Dispensación de insumos y dispositivos",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Dispensación de insumos y dispositivos"
+  },
+  {
+    "id": "pr134",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Dispensación de medicamentos",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Dispensación de medicamentos"
+  },
+  {
+    "id": "pr135",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Preparación de Citostaticos Condición",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Preparación de Citostaticos Condición"
+  },
+  {
+    "id": "pr136",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Preparación de fórmulas parenterales",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Preparación de fórmulas parenterales"
+  },
+  {
+    "id": "pr137",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Preparación de mezclas inyectables",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Preparación de mezclas inyectables"
+  },
+  {
+    "id": "pr138",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Preparación de productos Galénicos",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Preparación de productos Galénicos"
+  },
+  {
+    "id": "pr139",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia)",
+    "prestacion": "Preparación de Unidosis - será Requerido a partir de 30 camas censables",
+    "sub": "",
+    "label": "Dotación de Medicamentos y Dispositivos Médicos (Farmacia) › Preparación de Unidosis - será Requerido a partir de 30 camas censables"
+  },
+  {
+    "id": "pr140",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Agregar otros",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Agregar otros"
+  },
+  {
+    "id": "pr141",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Atención clínica ambulatoria",
+    "sub": "Quimioterapia",
+    "label": "Atención de Apoyo Terapéutico › Atención clínica ambulatoria › Quimioterapia"
+  },
+  {
+    "id": "pr142",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Cuidados Paliativos Condición",
+    "sub": "Manejo del dolor",
+    "label": "Atención de Apoyo Terapéutico › Cuidados Paliativos Condición › Manejo del dolor"
+  },
+  {
+    "id": "pr143",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Diálisis peritoneal",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Diálisis peritoneal"
+  },
+  {
+    "id": "pr144",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Electroshock",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Electroshock"
+  },
+  {
+    "id": "pr145",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Hemodiálisis",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Hemodiálisis"
+  },
+  {
+    "id": "pr146",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Litotripsia",
+    "sub": "Litotripsia Extracorpórea",
+    "label": "Atención de Apoyo Terapéutico › Litotripsia › Litotripsia Extracorpórea"
+  },
+  {
+    "id": "pr147",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Radioterapia",
+    "sub": "Braquiterapia",
+    "label": "Atención de Apoyo Terapéutico › Radioterapia › Braquiterapia"
+  },
+  {
+    "id": "pr148",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Terapia con cámara hiperbárica e hipobarica",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Terapia con cámara hiperbárica e hipobarica"
+  },
+  {
+    "id": "pr149",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Dosimetría física",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Dosimetría física"
+  },
+  {
+    "id": "pr150",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Litotripsisia Intracorporea",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Litotripsisia Intracorporea"
+  },
+  {
+    "id": "pr151",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Manejo de otros síntomas",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Manejo de otros síntomas"
+  },
+  {
+    "id": "pr152",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Manejo psicológico del paciente",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Manejo psicológico del paciente"
+  },
+  {
+    "id": "pr153",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Salud mental",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Salud mental"
+  },
+  {
+    "id": "pr154",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Terapia Biológica",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Terapia Biológica"
+  },
+  {
+    "id": "pr155",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Terapia con acelerador lineal",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Terapia con acelerador lineal"
+  },
+  {
+    "id": "pr156",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Terapia con cobalto",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Terapia con cobalto"
+  },
+  {
+    "id": "pr157",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención de Apoyo Terapéutico",
+    "prestacion": "Tomografía axial computarizada simulador( planificación del tratamiento)",
+    "sub": "",
+    "label": "Atención de Apoyo Terapéutico › Tomografía axial computarizada simulador( planificación del tratamiento)"
+  },
+  {
+    "id": "pr158",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Quirófanos",
+    "sub": "Cesáreas",
+    "label": "Atención en Centro Obstétrico › Quirófanos › Cesáreas"
+  },
+  {
+    "id": "pr159",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Quirófanos",
+    "sub": "Ginecología",
+    "label": "Atención en Centro Obstétrico › Quirófanos › Ginecología"
+  },
+  {
+    "id": "pr160",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Sala de Legrados",
+    "sub": "",
+    "label": "Atención en Centro Obstétrico › Sala de Legrados"
+  },
+  {
+    "id": "pr161",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Sala de parto con pertinencia intercultural Condición",
+    "sub": "",
+    "label": "Atención en Centro Obstétrico › Sala de parto con pertinencia intercultural Condición"
+  },
+  {
+    "id": "pr162",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Salas de de parto vaginal",
+    "sub": "",
+    "label": "Atención en Centro Obstétrico › Salas de de parto vaginal"
+  },
+  {
+    "id": "pr163",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Atención en Centro Obstétrico",
+    "prestacion": "Salas de labor de parto",
+    "sub": "",
+    "label": "Atención en Centro Obstétrico › Salas de labor de parto"
+  },
+  {
+    "id": "pr164",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Almacenamiento de componentes sanguíneos Condición",
+    "sub": "",
+    "label": "Banco de Sangre › Almacenamiento de componentes sanguíneos Condición"
+  },
+  {
+    "id": "pr165",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Asesoría en técnicas de transfusión Autologa",
+    "sub": "",
+    "label": "Banco de Sangre › Asesoría en técnicas de transfusión Autologa"
+  },
+  {
+    "id": "pr166",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Asesoría y Referencia de donantes serológicos reactivos",
+    "sub": "",
+    "label": "Banco de Sangre › Asesoría y Referencia de donantes serológicos reactivos"
+  },
+  {
+    "id": "pr167",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Colecta de Sangre",
+    "sub": "",
+    "label": "Banco de Sangre › Colecta de Sangre"
+  },
+  {
+    "id": "pr168",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Distribución de Componentes Sanguíneos",
+    "sub": "",
+    "label": "Banco de Sangre › Distribución de Componentes Sanguíneos"
+  },
+  {
+    "id": "pr169",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Hemovigilancia",
+    "sub": "",
+    "label": "Banco de Sangre › Hemovigilancia"
+  },
+  {
+    "id": "pr170",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Procesamiento de Sangre",
+    "sub": "",
+    "label": "Banco de Sangre › Procesamiento de Sangre"
+  },
+  {
+    "id": "pr171",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Promoción de la Donación Voluntaria de Sangre",
+    "sub": "",
+    "label": "Banco de Sangre › Promoción de la Donación Voluntaria de Sangre"
+  },
+  {
+    "id": "pr172",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Pruebas de inmunohematología",
+    "sub": "",
+    "label": "Banco de Sangre › Pruebas de inmunohematología"
+  },
+  {
+    "id": "pr173",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Recepción y despacho de componentes sanguíneos",
+    "sub": "",
+    "label": "Banco de Sangre › Recepción y despacho de componentes sanguíneos"
+  },
+  {
+    "id": "pr174",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Banco de Sangre",
+    "prestacion": "Transfusiones ambulatorias",
+    "sub": "",
+    "label": "Banco de Sangre › Transfusiones ambulatorias"
+  },
+  {
+    "id": "pr175",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunización anti Difteria y tétanos",
+    "sub": "",
+    "label": "Inmunización › Inmunización anti Difteria y tétanos"
+  },
+  {
+    "id": "pr176",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunización anti hepatitis",
+    "sub": "",
+    "label": "Inmunización › Inmunización anti hepatitis"
+  },
+  {
+    "id": "pr177",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunización anti Influenza Condición",
+    "sub": "",
+    "label": "Inmunización › Inmunización anti Influenza Condición"
+  },
+  {
+    "id": "pr178",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunización anti SRP",
+    "sub": "",
+    "label": "Inmunización › Inmunización anti SRP"
+  },
+  {
+    "id": "pr179",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunización anti Varicela",
+    "sub": "",
+    "label": "Inmunización › Inmunización anti Varicela"
+  },
+  {
+    "id": "pr180",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Inmunizaciòn BCG",
+    "sub": "",
+    "label": "Inmunización › Inmunizaciòn BCG"
+  },
+  {
+    "id": "pr181",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Inmunización",
+    "prestacion": "Otras inmunizaciones",
+    "sub": "",
+    "label": "Inmunización › Otras inmunizaciones"
+  },
+  {
+    "id": "pr182",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Medicina Transfusional",
+    "prestacion": "Hemovigilancia",
+    "sub": "",
+    "label": "Medicina Transfusional › Hemovigilancia"
+  },
+  {
+    "id": "pr183",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Medicina Transfusional",
+    "prestacion": "Pruebas de inmunohematología Condición",
+    "sub": "",
+    "label": "Medicina Transfusional › Pruebas de inmunohematología Condición"
+  },
+  {
+    "id": "pr184",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Medicina Transfusional",
+    "prestacion": "Recepción y despacho de componentes sanguíneos",
+    "sub": "",
+    "label": "Medicina Transfusional › Recepción y despacho de componentes sanguíneos"
+  },
+  {
+    "id": "pr185",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Nutrición y Dietética",
+    "prestacion": "Consulta externa",
+    "sub": "",
+    "label": "Nutrición y Dietética › Consulta externa"
+  },
+  {
+    "id": "pr186",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Nutrición y Dietética",
+    "prestacion": "Preparación de formulas enterales",
+    "sub": "",
+    "label": "Nutrición y Dietética › Preparación de formulas enterales"
+  },
+  {
+    "id": "pr187",
+    "tipo": "Apoyo Terapéutico",
+    "servicio": "Nutrición y Dietética",
+    "prestacion": "Provisión de dietas, componentes dietéticos y alimentos",
+    "sub": "",
+    "label": "Nutrición y Dietética › Provisión de dietas, componentes dietéticos y alimentos"
+  },
+  {
+    "id": "pr188",
+    "tipo": "Asistencial",
+    "servicio": "Atención en Unidad de Quemados",
+    "prestacion": "Cuidados intermedios o avanzados de cirugía plástica y reconstructiva",
+    "sub": "",
+    "label": "Atención en Unidad de Quemados › Cuidados intermedios o avanzados de cirugía plástica y reconstructiva"
+  },
+  {
+    "id": "pr189",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía General",
+    "sub": "",
+    "label": "Consulta externa › Cirugía General"
+  },
+  {
+    "id": "pr190",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Procedimientos ambulatorios en Enfermería -Cuidados de Enfermería",
+    "sub": "",
+    "label": "Consulta externa › Procedimientos ambulatorios en Enfermería -Cuidados de Enfermería"
+  },
+  {
+    "id": "pr191",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Neuropsicología",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Neuropsicología"
+  },
+  {
+    "id": "pr192",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Neuropsiquiatría",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Neuropsiquiatría"
+  },
+  {
+    "id": "pr193",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Psicofarmacología",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Psicofarmacología"
+  },
+  {
+    "id": "pr194",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Psicología clínica",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Psicología clínica"
+  },
+  {
+    "id": "pr195",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Psicología infantil",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Psicología infantil"
+  },
+  {
+    "id": "pr196",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Psiquiatría geriátrica",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Psiquiatría geriátrica"
+  },
+  {
+    "id": "pr197",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Consulta externa en Psiquiatría infanto juvenil",
+    "sub": "",
+    "label": "Consulta externa › Consulta externa en Psiquiatría infanto juvenil"
+  },
+  {
+    "id": "pr198",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Alergología",
+    "sub": "",
+    "label": "Consulta externa › Alergología"
+  },
+  {
+    "id": "pr199",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Anestesiología",
+    "sub": "Valoracion Prequirugica",
+    "label": "Consulta externa › Anestesiología › Valoracion Prequirugica"
+  },
+  {
+    "id": "pr200",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cardiología",
+    "sub": "Consulta externa en Cardiología Adultos",
+    "label": "Consulta externa › Cardiología › Consulta externa en Cardiología Adultos"
+  },
+  {
+    "id": "pr201",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cardiologia Pediatrica",
+    "sub": "Consulta externa en Cirugía cardiaca Pediátrica",
+    "label": "Consulta externa › Cardiologia Pediatrica › Consulta externa en Cirugía cardiaca Pediátrica"
+  },
+  {
+    "id": "pr202",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía Digestiva",
+    "sub": "",
+    "label": "Consulta externa › Cirugía Digestiva"
+  },
+  {
+    "id": "pr203",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía Maxilo Facial",
+    "sub": "Fracturas nasales, fracturas malares, fracturas mandibulares, fracturas maxilares, LEFORT I III y III, tumnores benignos de la cara y cuello, quistes epidermicos, lipomas de cara y cuello, fibromas de cara y cuello, hamagiomas de cara y cuello, tumores benignos de glandulas salivales mayores , parotidas y sublinguales, labio leporino, paladar hendido, biopsia incisional de tumores malignos de cara y cuello, complicaciones de extracciones dentarias, procesos septicos bucofaciales, celulitis faciales odontogenas, celulitis faciales no odontogenas",
+    "label": "Consulta externa › Cirugía Maxilo Facial › Fracturas nasales, fracturas malares, fracturas mandibulares, fracturas maxilares, LEFORT I III y III, tumnores benignos de la cara y cuello, quistes epidermicos, lipomas de cara y cuello, fibromas de cara y cuello, hamagiomas de cara y cuello, tumores benignos de glandulas salivales mayores , parotidas y sublinguales, labio leporino, paladar hendido, biopsia incisional de tumores malignos de cara y cuello, complicaciones de extracciones dentarias, procesos septicos bucofaciales, celulitis faciales odontogenas, celulitis faciales no odontogenas"
+  },
+  {
+    "id": "pr204",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía plástica y Reconstructiva",
+    "sub": "",
+    "label": "Consulta externa › Cirugía plástica y Reconstructiva"
+  },
+  {
+    "id": "pr205",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía Vascular",
+    "sub": "",
+    "label": "Consulta externa › Cirugía Vascular"
+  },
+  {
+    "id": "pr206",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cirugía Torácica",
+    "sub": "",
+    "label": "Consulta externa › Cirugía Torácica"
+  },
+  {
+    "id": "pr207",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Coloproctología",
+    "sub": "Atenciones de sangrado rectal, dolor anal, trastornos evacuatorios, estreñimiento, distension abdominal, diarreas, secresion anal, dolor abdominal.",
+    "label": "Consulta externa › Coloproctología › Atenciones de sangrado rectal, dolor anal, trastornos evacuatorios, estreñimiento, distension abdominal, diarreas, secresion anal, dolor abdominal."
+  },
+  {
+    "id": "pr208",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Cuidados paliativos",
+    "sub": "",
+    "label": "Consulta externa › Cuidados paliativos"
+  },
+  {
+    "id": "pr209",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Dermatología",
+    "sub": "Procedimientos menores",
+    "label": "Consulta externa › Dermatología › Procedimientos menores"
+  },
+  {
+    "id": "pr210",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Nutricion y Diabetología",
+    "sub": "Atencion de Diabetes, obesidad, Sindrome Metabolico, obesidad",
+    "label": "Consulta externa › Nutricion y Diabetología › Atencion de Diabetes, obesidad, Sindrome Metabolico, obesidad"
+  },
+  {
+    "id": "pr211",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Endocrinología",
+    "sub": "Patologias endocrinas",
+    "label": "Consulta externa › Endocrinología › Patologias endocrinas"
+  },
+  {
+    "id": "pr212",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Gastroenterología",
+    "sub": "",
+    "label": "Consulta externa › Gastroenterología"
+  },
+  {
+    "id": "pr213",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Fisiatría",
+    "sub": "",
+    "label": "Consulta externa › Fisiatría"
+  },
+  {
+    "id": "pr214",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Genética",
+    "sub": "",
+    "label": "Consulta externa › Genética"
+  },
+  {
+    "id": "pr215",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Geriatría",
+    "sub": "",
+    "label": "Consulta externa › Geriatría"
+  },
+  {
+    "id": "pr216",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Ginecología",
+    "sub": "",
+    "label": "Consulta externa › Ginecología"
+  },
+  {
+    "id": "pr217",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Hematología",
+    "sub": "",
+    "label": "Consulta externa › Hematología"
+  },
+  {
+    "id": "pr218",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Medicina Hiperbárica o Hipobárica",
+    "sub": "",
+    "label": "Consulta externa › Medicina Hiperbárica o Hipobárica"
+  },
+  {
+    "id": "pr219",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Infectología",
+    "sub": "Consulta externa en Clínica de VIH",
+    "label": "Consulta externa › Infectología › Consulta externa en Clínica de VIH"
+  },
+  {
+    "id": "pr220",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Medicina del Deporte",
+    "sub": "",
+    "label": "Consulta externa › Medicina del Deporte"
+  },
+  {
+    "id": "pr221",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Medicina Familiar y Comunitaria",
+    "sub": "",
+    "label": "Consulta externa › Medicina Familiar y Comunitaria"
+  },
+  {
+    "id": "pr222",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Medicina Interna",
+    "sub": "",
+    "label": "Consulta externa › Medicina Interna"
+  },
+  {
+    "id": "pr223",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Medicina Ocupacional",
+    "sub": "",
+    "label": "Consulta externa › Medicina Ocupacional"
+  },
+  {
+    "id": "pr224",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Neumología",
+    "sub": "Consulta externa en Neumología Adultos",
+    "label": "Consulta externa › Neumología › Consulta externa en Neumología Adultos"
+  },
+  {
+    "id": "pr225",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Neurocirugía",
+    "sub": "Consulta Externa Adultos",
+    "label": "Consulta externa › Neurocirugía › Consulta Externa Adultos"
+  },
+  {
+    "id": "pr226",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Nefrología",
+    "sub": "Consulta externa en Nefrología Adulto",
+    "label": "Consulta externa › Nefrología › Consulta externa en Nefrología Adulto"
+  },
+  {
+    "id": "pr227",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Nutrición y Dietetica",
+    "sub": "Atencion brindada por un/a Licenciada en nutriciòn",
+    "label": "Consulta externa › Nutrición y Dietetica › Atencion brindada por un/a Licenciada en nutriciòn"
+  },
+  {
+    "id": "pr228",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Obstetricia",
+    "sub": "Consulta externa en Obstetricia en la Adolescencia",
+    "label": "Consulta externa › Obstetricia › Consulta externa en Obstetricia en la Adolescencia"
+  },
+  {
+    "id": "pr229",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Odontología",
+    "sub": "Consulta externa en Endodoncia: endodoncia uniradicular, endodoncia biradicular y endodoncia multiradicular",
+    "label": "Consulta externa › Odontología › Consulta externa en Endodoncia: endodoncia uniradicular, endodoncia biradicular y endodoncia multiradicular"
+  },
+  {
+    "id": "pr230",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Oftalmología",
+    "sub": "Consulta externa en subespecialidades en oftalmología",
+    "label": "Consulta externa › Oftalmología › Consulta externa en subespecialidades en oftalmología"
+  },
+  {
+    "id": "pr231",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Otorrinolaringología",
+    "sub": "Consulta externa en Otorrinolaringología Adultos",
+    "label": "Consulta externa › Otorrinolaringología › Consulta externa en Otorrinolaringología Adultos"
+  },
+  {
+    "id": "pr232",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Oncología Requerido",
+    "sub": "Consulta externa en Oncología Pediátrica",
+    "label": "Consulta externa › Oncología Requerido › Consulta externa en Oncología Pediátrica"
+  },
+  {
+    "id": "pr233",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Pediatría",
+    "sub": "",
+    "label": "Consulta externa › Pediatría"
+  },
+  {
+    "id": "pr234",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Neonatología Condición",
+    "sub": "",
+    "label": "Consulta externa › Neonatología Condición"
+  },
+  {
+    "id": "pr235",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Reumatología",
+    "sub": "",
+    "label": "Consulta externa › Reumatología"
+  },
+  {
+    "id": "pr236",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Salud Mental",
+    "sub": "Consulta externa en Psiquiatría de adultos",
+    "label": "Consulta externa › Salud Mental › Consulta externa en Psiquiatría de adultos"
+  },
+  {
+    "id": "pr237",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Terapias Alternativas",
+    "sub": "Consulta externa en Acupuntura",
+    "label": "Consulta externa › Terapias Alternativas › Consulta externa en Acupuntura"
+  },
+  {
+    "id": "pr238",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Terapias Alternativas",
+    "sub": "Consulta externa en Homeopatía",
+    "label": "Consulta externa › Terapias Alternativas › Consulta externa en Homeopatía"
+  },
+  {
+    "id": "pr239",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Terapias Alternativas",
+    "sub": "Consulta externa en Terapia Neural",
+    "label": "Consulta externa › Terapias Alternativas › Consulta externa en Terapia Neural"
+  },
+  {
+    "id": "pr240",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Traumatología y Ortopedia",
+    "sub": "",
+    "label": "Consulta externa › Traumatología y Ortopedia"
+  },
+  {
+    "id": "pr241",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Urología",
+    "sub": "",
+    "label": "Consulta externa › Urología"
+  },
+  {
+    "id": "pr242",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Gastroenterologia Pediatría",
+    "sub": "",
+    "label": "Consulta externa › Gastroenterologia Pediatría"
+  },
+  {
+    "id": "pr243",
+    "tipo": "Asistencial",
+    "servicio": "Consulta externa",
+    "prestacion": "Endocrinologia Pediatría",
+    "sub": "",
+    "label": "Consulta externa › Endocrinologia Pediatría"
+  },
+  {
+    "id": "pr244",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "AREA COVID",
+    "sub": "",
+    "label": "Emergencia › AREA COVID"
+  },
+  {
+    "id": "pr245",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Clasificación de emergencias (Triage)",
+    "sub": "Triage de adultos",
+    "label": "Emergencia › Clasificación de emergencias (Triage) › Triage de adultos"
+  },
+  {
+    "id": "pr246",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Clasificación de emergencias (Triage)",
+    "sub": "Triage de niños(pediátrico)",
+    "label": "Emergencia › Clasificación de emergencias (Triage) › Triage de niños(pediátrico)"
+  },
+  {
+    "id": "pr247",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Consultorios de especialidades y subespecialistas",
+    "sub": "",
+    "label": "Emergencia › Consultorios de especialidades y subespecialistas"
+  },
+  {
+    "id": "pr248",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Estabilización del paciente (Unidad de choque) Requerido",
+    "sub": "",
+    "label": "Emergencia › Estabilización del paciente (Unidad de choque) Requerido"
+  },
+  {
+    "id": "pr249",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Observación en Emergencia",
+    "sub": "Observación en Emergencia de Adultos",
+    "label": "Emergencia › Observación en Emergencia › Observación en Emergencia de Adultos"
+  },
+  {
+    "id": "pr250",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Observación en Emergencia",
+    "sub": "Observación en Emergencia pediátrica",
+    "label": "Emergencia › Observación en Emergencia › Observación en Emergencia pediátrica"
+  },
+  {
+    "id": "pr251",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Procedimientos menores en Emergencia",
+    "sub": "Curaciones, suturas, colocación/cambios de sondas, retiro de puntos e inyecciones",
+    "label": "Emergencia › Procedimientos menores en Emergencia › Curaciones, suturas, colocación/cambios de sondas, retiro de puntos e inyecciones"
+  },
+  {
+    "id": "pr252",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Procedimientos menores en Emergencia",
+    "sub": "Inmovilización",
+    "label": "Emergencia › Procedimientos menores en Emergencia › Inmovilización"
+  },
+  {
+    "id": "pr253",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Procedimientos menores en Emergencia",
+    "sub": "Rehidratación Requerido",
+    "label": "Emergencia › Procedimientos menores en Emergencia › Rehidratación Requerido"
+  },
+  {
+    "id": "pr254",
+    "tipo": "Asistencial",
+    "servicio": "Emergencia",
+    "prestacion": "Procedimientos menores en Emergencia",
+    "sub": "Terapia Respiratoria",
+    "label": "Emergencia › Procedimientos menores en Emergencia › Terapia Respiratoria"
+  },
+  {
+    "id": "pr255",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Centro Obstetrico",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Centro Obstetrico"
+  },
+  {
+    "id": "pr256",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación en especialidades Clínicas",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación en especialidades Clínicas"
+  },
+  {
+    "id": "pr257",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación en especialidades Quirúrgicas",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación en especialidades Quirúrgicas"
+  },
+  {
+    "id": "pr258",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación en Gineco Obstetricia",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación en Gineco Obstetricia"
+  },
+  {
+    "id": "pr259",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación en Pediatría",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación en Pediatría"
+  },
+  {
+    "id": "pr260",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación en recuperación funcional geriátrica",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación en recuperación funcional geriátrica"
+  },
+  {
+    "id": "pr261",
+    "tipo": "Asistencial",
+    "servicio": "Internación (Atención Clínica y/o Quirúrgica)",
+    "prestacion": "Internación geriátrica de agudos",
+    "sub": "",
+    "label": "Internación (Atención Clínica y/o Quirúrgica) › Internación geriátrica de agudos"
+  },
+  {
+    "id": "pr262",
+    "tipo": "Administrativos",
+    "servicio": "Administración Técnica Requerido",
+    "prestacion": "Coordinar, supervisar y gestionar los procesos definidos para el Establecimiento.",
+    "sub": "",
+    "label": "Administración Técnica Requerido › Coordinar, supervisar y gestionar los procesos definidos para el Establecimiento."
+  }
+]

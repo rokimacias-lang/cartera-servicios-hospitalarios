@@ -1,0 +1,4 @@
+# Cambie cartera.example.com por su dominio real.
+cartera.example.com {
+  reverse_proxy 127.0.0.1:80
+}
