@@ -2,6 +2,10 @@
 
 Versión orientada a producción: React/Vite + Nginx + Express + PostgreSQL + sesiones persistentes.
 
+> La evaluación de la línea base y los bloqueadores que deben resolverse antes de SIGCAS-MSP v0.4 están documentados en [`docs/diagnostico-tecnico-v0.4.md`](docs/diagnostico-tecnico-v0.4.md).
+> Los controles de separación de secretos, artefactos y ambientes aplicados para v0.4 se detallan en [`docs/aislamiento-seguro-v0.4.md`](docs/aislamiento-seguro-v0.4.md).
+> La arquitectura objetivo, límites de módulos, modelo de datos y plan evolutivo están definidos en [`docs/diseno-arquitectonico-v0.4.md`](docs/diseno-arquitectonico-v0.4.md).
+
 ## 1. Requisitos
 - Docker Desktop / Docker Engine + Compose
 - Un servidor con HTTPS para producción
@@ -11,6 +15,8 @@ Copie `.env.example` como `.env` y cambie como mínimo:
 - POSTGRES_PASSWORD
 - SESSION_SECRET
 - DEFAULT_ADMIN_PASSWORD
+
+Los archivos `.env` están excluidos de Git y de los contextos Docker. No elimine los marcadores de la plantilla sin reemplazarlos por secretos generados para el ambiente correspondiente.
 
 Genere un secreto con:
 `openssl rand -hex 32`
