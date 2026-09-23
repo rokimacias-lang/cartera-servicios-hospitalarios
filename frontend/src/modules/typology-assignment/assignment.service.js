@@ -2,7 +2,12 @@ import { requireSupabase } from '../../services/supabase/client.js';
 import { mapSupabaseError, SigcasError } from '../../services/supabase/errors.js';
 
 export const ASSIGNMENT_STATES = ['SIN_CONFIGURAR', 'REQUERIDA', 'OPCIONAL', 'NO_PERMITIDA'];
+export const ASSIGNMENT_STATE_COLUMN = 'estado_asignacion';
 export const PAGE_SIZE = 50;
+
+export function assignmentStateOf(row) {
+  return row?.[ASSIGNMENT_STATE_COLUMN] ?? 'SIN_CONFIGURAR';
+}
 
 function applyFilters(query, filters, includeState = true) {
   let next = query;
@@ -10,7 +15,7 @@ function applyFilters(query, filters, includeState = true) {
   if (filters.tipologia) next = next.eq('tipologia', filters.tipologia);
   if (filters.clasificacion) next = next.eq('clasificacion', filters.clasificacion);
   if (filters.servicio) next = next.eq('servicio', filters.servicio);
-  if (includeState && filters.estado) next = next.eq('estado', filters.estado);
+  if (includeState && filters.estado_asignacion) next = next.eq(ASSIGNMENT_STATE_COLUMN, filters.estado_asignacion);
   if (filters.busqueda) next = next.ilike('prestacion', `%${filters.busqueda.replaceAll('%', '\\%').replaceAll('_', '\\_')}%`);
   return next;
 }
@@ -43,7 +48,7 @@ export async function fetchFilterOptions() {
 export async function fetchIndicators(filters) {
   const count = async (estado) => {
     let query = requireSupabase().from('v_catalogo_tipologia_configuracion').select('*', { count: 'exact', head: true });
-    query = applyFilters(query, { ...filters, estado }, true);
+    query = applyFilters(query, { ...filters, estado_asignacion: estado }, true);
     const { count: result, error } = await query;
     if (error) throw mapSupabaseError(error, 'No fue posible calcular los indicadores.');
     return result ?? 0;
