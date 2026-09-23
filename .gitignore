@@ -1,0 +1,32 @@
+# Dependencias instaladas localmente
+node_modules/
+
+# Artefactos de construcción y pruebas
+dist/
+build/
+coverage/
+.vite/
+
+# Configuración local y secretos (se conserva la plantilla pública)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Datos operativos locales
+backups/
+*.sql
+*.sql.gz
+*.dump
+*.log
+*.pid
+
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

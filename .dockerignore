@@ -1,0 +1,15 @@
+.git
+.gitignore
+.github
+**/node_modules
+**/dist
+**/coverage
+.env
+.env.*
+!.env.example
+backups
+docs
+*.log
+*.sql
+*.sql.gz
+*.dump
