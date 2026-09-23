@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { ASSIGNMENT_STATES, fetchAssignments, fetchFilterOptions, fetchIndicators, PAGE_SIZE, upsertAssignments } from './assignment.service.js';
+import { ASSIGNMENT_STATES, assignmentStateOf, fetchAssignments, fetchFilterOptions, fetchIndicators, PAGE_SIZE, upsertAssignments } from './assignment.service.js';
 import { mapSupabaseError } from '../../services/supabase/errors.js';
 
-const EMPTY_FILTERS = { nivel: '', tipologia: '', clasificacion: '', servicio: '', busqueda: '', estado: '' };
+const EMPTY_FILTERS = { nivel: '', tipologia: '', clasificacion: '', servicio: '', busqueda: '', estado_asignacion: '' };
 const EMPTY_BULK = { estado: '', fuenteRegla: '', justificacion: '', vigenciaDesde: '', vigenciaHasta: '' };
 const STATE_LABELS = { SIN_CONFIGURAR: 'Sin configurar', REQUERIDA: 'Requeridas', OPCIONAL: 'Opcionales', NO_PERMITIDA: 'No permitidas' };
 
@@ -18,7 +18,7 @@ function Filters({ filters, options, onChange }) {
       <label>Tipología<select value={filters.tipologia} onChange={field('tipologia')}><option value="">Todas</option>{options.tipologias.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>Clasificación<select value={filters.clasificacion} onChange={field('clasificacion')}><option value="">Todas</option>{options.clasificaciones.map((value) => <option key={value}>{value}</option>)}</select></label>
       <label>Servicio<select value={filters.servicio} onChange={field('servicio')}><option value="">Todos</option>{options.servicios.map((value) => <option key={value}>{value}</option>)}</select></label>
-      <label>Estado<select value={filters.estado} onChange={field('estado')}><option value="">Todos</option>{ASSIGNMENT_STATES.map((value) => <option key={value} value={value}>{STATE_LABELS[value]}</option>)}</select></label>
+      <label>Estado<select value={filters.estado_asignacion} onChange={field('estado_asignacion')}><option value="">Todos</option>{ASSIGNMENT_STATES.map((value) => <option key={value} value={value}>{STATE_LABELS[value]}</option>)}</select></label>
       <label className="filters__search">Buscar prestación<input type="search" value={filters.busqueda} onChange={field('busqueda')} placeholder="Nombre de la prestación" /></label>
       <button className="button button--quiet" onClick={() => onChange(EMPTY_FILTERS)}>Limpiar</button>
     </div>
@@ -83,7 +83,7 @@ export function TypologyAssignmentPage() {
       <div className="card table-card" aria-busy={status.loading}>
         <div className="table-toolbar"><span>{total} resultados · {selected.size} seleccionados</span><button className="button button--quiet" disabled={!selected.size} onClick={() => setSelected(new Set())}>Deseleccionar</button></div>
         <div className="table-scroll"><table><thead><tr><th><input aria-label="Seleccionar visibles" type="checkbox" checked={allVisibleSelected} onChange={toggleAll} /></th><th>Clasificación</th><th>Servicio</th><th>Prestación</th><th>Nivel</th><th>Tipología</th><th>Estado</th><th>Fuente</th><th>Justificación</th><th>Vigencia</th></tr></thead>
-          <tbody>{status.loading ? <tr><td colSpan="10">Cargando configuración…</td></tr> : rows.length === 0 ? <tr><td colSpan="10">No existen resultados para los filtros seleccionados.</td></tr> : rows.map((row) => { const id = idOf(row); return <tr key={`${row.nivel}-${row.tipologia}-${id}`}><td><input aria-label={`Seleccionar ${row.prestacion}`} type="checkbox" checked={selected.has(id)} onChange={() => toggleOne(id)} /></td><td>{row.clasificacion ?? '—'}</td><td>{row.servicio ?? '—'}</td><td>{row.prestacion ?? '—'}</td><td>{row.nivel ?? '—'}</td><td>{row.tipologia ?? '—'}</td><td><span className={`status status--${String(row.estado ?? 'SIN_CONFIGURAR').toLowerCase()}`}>{STATE_LABELS[row.estado] ?? row.estado ?? STATE_LABELS.SIN_CONFIGURAR}</span></td><td>{row.fuente_regla ?? '—'}</td><td>{row.justificacion ?? '—'}</td><td>{row.vigencia_desde ? `${row.vigencia_desde} — ${row.vigencia_hasta ?? 'vigente'}` : '—'}</td></tr>; })}</tbody>
+          <tbody>{status.loading ? <tr><td colSpan="10">Cargando configuración…</td></tr> : rows.length === 0 ? <tr><td colSpan="10">No existen resultados para los filtros seleccionados.</td></tr> : rows.map((row) => { const id = idOf(row); const assignmentState = assignmentStateOf(row); return <tr key={`${row.nivel}-${row.tipologia}-${id}`}><td><input aria-label={`Seleccionar ${row.prestacion}`} type="checkbox" checked={selected.has(id)} onChange={() => toggleOne(id)} /></td><td>{row.clasificacion ?? '—'}</td><td>{row.servicio ?? '—'}</td><td>{row.prestacion ?? '—'}</td><td>{row.nivel ?? '—'}</td><td>{row.tipologia ?? '—'}</td><td><span className={`status status--${assignmentState.toLowerCase()}`}>{STATE_LABELS[assignmentState] ?? assignmentState}</span></td><td>{row.fuente_regla ?? '—'}</td><td>{row.justificacion ?? '—'}</td><td>{row.vigencia_desde ? `${row.vigencia_desde} — ${row.vigencia_hasta ?? 'vigente'}` : '—'}</td></tr>; })}</tbody>
         </table></div>
         <div className="pagination"><button className="button button--quiet" disabled={page === 0 || status.loading} onClick={() => setPage((value) => value - 1)}>Anterior</button><span>Página {page + 1} de {Math.max(1, Math.ceil(total / PAGE_SIZE))}</span><button className="button button--quiet" disabled={(page + 1) * PAGE_SIZE >= total || status.loading} onClick={() => setPage((value) => value + 1)}>Siguiente</button></div>
       </div>
