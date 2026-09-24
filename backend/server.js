@@ -10,6 +10,7 @@ import pg from 'pg';
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import sigcasRouter from './sigcas-router.js';
 
 const { Pool } = pg;
 const PORT = Number(process.env.PORT || 4000);
@@ -39,6 +40,7 @@ async function audit(req,a,e,id=null,d=''){await q('INSERT INTO audit_log(userna
 const app=express();app.disable('x-powered-by');app.set('trust proxy',Number(process.env.TRUST_PROXY||0));app.use(helmet({contentSecurityPolicy:false}));app.use(cors({origin:(process.env.CORS_ORIGIN||'http://localhost:5173').split(','),credentials:true}));app.use(express.json({limit:'5mb'}));app.use('/api/auth/login',rateLimit({windowMs:15*60*1000,max:20,standardHeaders:true,legacyHeaders:false}));
 const PgStore=connectPgSimple(session);app.use(session({store:new PgStore({pool,tableName:'user_sessions',createTableIfMissing:true}),secret:process.env.SESSION_SECRET||'change-me',resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:process.env.COOKIE_SAMESITE||'lax',secure:process.env.NODE_ENV==='production',maxAge:8*60*60*1000}}));
 const auth=(req,res,n)=>req.session.user?n():res.status(401).json({error:'No autenticado'});const admin=(req,res,n)=>req.session.user?.role==='admin'?n():res.status(403).json({error:'Acceso restringido'});
+app.use('/api/v1', auth, sigcasRouter);
 app.get('/api/health',async(req,res)=>{try{await q('SELECT 1');res.json({ok:true,db:'postgres',version:'4.0',time:now()})}catch(e){res.status(503).json({ok:false})}});
 app.post('/api/auth/login',async(req,res)=>{const u=String(req.body?.username||'').trim(),p=String(req.body?.password||'');const r=await q('SELECT * FROM users WHERE username=$1 AND active=true',[u]);if(!r.rows[0]||!(await bcrypt.compare(p,r.rows[0].password_hash)))return res.status(401).json({error:'Usuario o clave incorrectos.'});req.session.user={id:String(r.rows[0].id),username:r.rows[0].username,role:r.rows[0].role,unicodigo:r.rows[0].unicodigo};await audit(req,'LOGIN','user',String(r.rows[0].id));res.json({user:req.session.user})});
 app.post('/api/auth/logout',auth,async(req,res)=>{await audit(req,'LOGOUT','user',req.session.user.id);req.session.destroy(()=>res.json({ok:true}))});app.get('/api/auth/me',(req,res)=>res.json({user:req.session.user||null}));
