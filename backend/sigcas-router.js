@@ -88,5 +88,6 @@ router.post('/carteras/:carteraId/items', requireSigcasBearer, async (req, res, 
   } catch (error) { next(error); }
 });
 
+router.post('/documentos', requireSigcasBearer, async (req,res,next)=>{try{const b=req.body||{};const result=await sigcasRest('rpc/sigcas_registrar_documento',req.sigcasAccessToken,{method:'POST',body:JSON.stringify({p_establecimiento_id:b.establecimiento_id,p_tipo:b.tipo,p_obligatorio:b.obligatorio!==false,p_archivo_path:b.archivo_path,p_archivo_nombre:b.archivo_nombre,p_archivo_mime:b.archivo_mime,p_archivo_tamano_bytes:b.archivo_tamano_bytes,p_archivo_hash_sha256:b.archivo_hash_sha256,p_fecha_emision:b.fecha_emision||null,p_fecha_vigencia:b.fecha_vigencia||null,p_responsable:b.responsable||null,p_observaciones:b.observaciones||null})});res.status(201).json({id:result});}catch(error){next(error);}});
 
 export default router;
