@@ -50,4 +50,23 @@ router.get('/catalogo/:catalogoId/subprestaciones', async (req, res, next) => {
   } catch (error) { next(error); }
 });
 
+router.get('/carteras/:carteraId/items', async (req, res, next) => {
+  try {
+    const { rows } = await sigcasPool.query(`
+      select ci.*, cs.codigo, cs.servicio, coalesce(cs.prestacion_homologada, cs.prestacion) prestacion,
+        coalesce(jsonb_agg(distinct cim.modalidad) filter (where cim.id is not null), '[]'::jsonb) modalidades,
+        coalesce(jsonb_agg(distinct cis.subprestacion_id) filter (where cis.id is not null), '[]'::jsonb) subprestaciones
+      from public.cartera_items ci
+      left join public.catalogo_servicios cs on cs.id=ci.catalogo_id
+      left join public.cartera_item_modalidades cim on cim.cartera_item_id=ci.id
+      left join public.cartera_item_subprestaciones cis on cis.cartera_item_id=ci.id
+      where ci.cartera_id=$1
+      group by ci.id,cs.codigo,cs.servicio,cs.prestacion_homologada,cs.prestacion
+      order by ci.created_at
+    `, [req.params.carteraId]);
+    res.json(rows);
+  } catch (error) { next(error); }
+});
+
+
 export default router;
