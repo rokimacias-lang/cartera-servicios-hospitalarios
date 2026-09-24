@@ -1,11 +1,10 @@
 const API_BASE = (import.meta.env.VITE_SIGCAS_API_URL || '/api/v1').replace(/\/$/, '');
 
-const TOKEN_KEY = 'sigcas_access_token';
+const SUPABASE_SESSION_KEY = 'sigcas.supabase.session';
 
 export const sigcasSession = {
-  getAccessToken: () => sessionStorage.getItem(TOKEN_KEY) || '',
-  setAccessToken: (token) => token ? sessionStorage.setItem(TOKEN_KEY, token) : sessionStorage.removeItem(TOKEN_KEY),
-  clear: () => sessionStorage.removeItem(TOKEN_KEY)
+  getAccessToken: () => { try { return JSON.parse(sessionStorage.getItem(SUPABASE_SESSION_KEY) || 'null')?.access_token || ''; } catch { return ''; } },
+  clear: () => sessionStorage.removeItem(SUPABASE_SESSION_KEY)
 };
 
 async function request(path, options = {}) {
