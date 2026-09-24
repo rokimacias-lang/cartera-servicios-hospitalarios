@@ -1,5 +1,6 @@
 import express from 'express';
 import pg from 'pg';
+import { requireSigcasBearer, sigcasRest } from './sigcas-auth.js';
 
 const { Pool } = pg;
 const router = express.Router();
@@ -65,6 +66,25 @@ router.get('/carteras/:carteraId/items', async (req, res, next) => {
       order by ci.created_at
     `, [req.params.carteraId]);
     res.json(rows);
+  } catch (error) { next(error); }
+});
+
+
+router.post('/carteras/:carteraId/items', requireSigcasBearer, async (req, res, next) => {
+  try {
+    const b = req.body || {};
+    const result = await sigcasRest('rpc/sigcas_save_cartera_item', req.sigcasAccessToken, {
+      method: 'POST',
+      body: JSON.stringify({
+        p_cartera_id: req.params.carteraId,
+        p_catalogo_id: b.catalogo_id,
+        p_estado_disponibilidad: b.estado_disponibilidad,
+        p_configuracion: b.configuracion || {},
+        p_subprestaciones: b.subprestaciones || [],
+        p_modalidades: b.modalidades || []
+      })
+    });
+    res.status(200).json({ id: result });
   } catch (error) { next(error); }
 });
 
