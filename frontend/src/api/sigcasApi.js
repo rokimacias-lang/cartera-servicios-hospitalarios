@@ -6,6 +6,9 @@ export const sigcasSession = {
   getAccessToken: () => sessionStorage.getItem(TOKEN_KEY) || '',
   setAccessToken: (token) => token ? sessionStorage.setItem(TOKEN_KEY, token) : sessionStorage.removeItem(TOKEN_KEY),
   clear: () => sessionStorage.removeItem(TOKEN_KEY)
+  ,registerDocumento(payload) {
+    return request('/documentos', { method: 'POST', auth: true, body: JSON.stringify(payload) });
+  }
 };
 
 async function request(path, options = {}) {
