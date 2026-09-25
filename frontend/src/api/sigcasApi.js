@@ -27,6 +27,9 @@ export const sigcasApi = {
   getSubprestaciones(catalogoId) {
     return request(`/catalogo/${encodeURIComponent(catalogoId)}/subprestaciones`);
   },
+  getCarteraActiva(establecimientoId, periodo = new Date().getFullYear()) {
+    return request(`/establecimientos/${encodeURIComponent(establecimientoId)}/cartera-activa?periodo=${encodeURIComponent(periodo)}`, { auth: true });
+  },
   getMiCartera(carteraId) {
     return request(`/carteras/${encodeURIComponent(carteraId)}/items`);
   },
