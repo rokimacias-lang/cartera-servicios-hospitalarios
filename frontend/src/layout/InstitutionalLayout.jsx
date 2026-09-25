@@ -14,13 +14,18 @@ export function InstitutionalLayout({ children }) {
   return (
     <div className="shell">
       <aside className="sidebar">
-        <div className="brand"><span className="brand__mark">S</span><div><strong>SIGCAS-MSP</strong><small>Versión 0.4</small></div></div>
+        <div className="brand"><span className="brand__mark">S</span><div><strong>SIGCAS-MSP</strong><small>Gestión de Carteras de Servicios</small></div></div>
         <nav aria-label="Navegación principal">
-          <AppLink to="/">Inicio</AppLink>
-          {profile?.establecimiento_id && <AppLink to="/hospital/cartera">Cartera hospitalaria</AppLink>}
-          {isCentralAdministrator(profile) && <AppLink to="/admin/asignacion-tipologia">Asignación Tipología/Nivel</AppLink>}
+          <AppLink to="/">Dashboard</AppLink>
+          <AppLink to="/catalogos">Catálogos Maestros</AppLink>
+          {profile?.establecimiento_id && <AppLink to="/hospital/cartera">Cartera de Servicios</AppLink>}
+          {profile?.establecimiento_id && <AppLink to="/hospital/capacidad">Capacidad Instalada</AppLink>}
+          {profile?.establecimiento_id && <AppLink to="/hospital/documentos">Documentos de Gestión</AppLink>}
+          <AppLink to="/validacion">Validación / Aprobación</AppLink>
+          <AppLink to="/reportes">Reportes y Análisis</AppLink>
+          {isCentralAdministrator(profile) && <AppLink to="/admin/asignacion-tipologia">Administración</AppLink>}
         </nav>
-        <p className="legacy-note">Migración modular SIGCAS-MSP en curso.</p>
+        <p className="legacy-note">SIGCAS-MSP · entorno UAT independiente</p>
       </aside>
       <div className="workspace">
         <header className="topbar">
