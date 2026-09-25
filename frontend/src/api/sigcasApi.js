@@ -17,6 +17,22 @@ export const sigcasSession = {
 };
 
 export const sigcasApi = {
+  async getEstablecimientos() {
+    const { data, error } = await db().from('establecimientos')
+      .select('id,unicodigo,nombre,provincia_id,canton,tipologia,nivel,activo,provincias(nombre)')
+      .eq('activo', true).order('nombre');
+    fail(error);
+    return (data || []).map((row) => ({ ...row, provincia: row.provincias?.nombre || '', provincias: undefined }));
+  },
+
+  async getDashboardCarteras() {
+    const { data, error } = await db().from('carteras')
+      .select('id,establecimiento_id,periodo,version,estado,created_at,establecimientos(id,unicodigo,nombre,provincia_id,tipologia,nivel,provincias(nombre)),cartera_items(id,catalogo_id,estado_disponibilidad,catalogo_servicios(id,clasificacion,area,servicio,prestacion))')
+      .order('created_at', { ascending: false });
+    fail(error);
+    return data || [];
+  },
+
   async getCatalogoConfiguracion() {
     const select = 'id,codigo,clasificacion,area,servicio,prestacion,prestacion_homologada,estado_homologacion,requiere_subprestacion,catalogo_configuracion_funcional!inner(requiere_atencion,opciones_atencion,permite_otra_atencion,requiere_jornada,opciones_jornada,permite_otra_jornada,permite_otros,tipo_otros,requiere_capacidad,categorias_capacidad,configuracion_especial)';
     const { data, error } = await db().from('catalogo_servicios').select(select)
