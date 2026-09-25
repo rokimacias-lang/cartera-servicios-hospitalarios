@@ -46,13 +46,15 @@ class QueryBuilder {
   constructor(resource) { this.resource = resource; this.params = new URLSearchParams(); this.headers = {}; this.singleRow = false; }
   select(columns = '*', options = {}) { this.params.set('select', columns); if (options.count) this.headers.Prefer = `count=${options.count}`; if (options.head) this.method = 'HEAD'; return this; }
   eq(column, value) { this.params.append(column, `eq.${value}`); return this; }
+  in(column, values) { this.params.append(column, `in.(${values.join(',')})`); return this; }
+  insert(values) { this.method = 'POST'; this.body = JSON.stringify(values); this.headers.Prefer = 'return=representation'; return this; }
   ilike(column, value) { this.params.append(column, `ilike.${value}`); return this; }
   order(column, options = {}) { this.params.append('order', `${column}.${options.ascending === false ? 'desc' : 'asc'}`); return this; }
   range(from, to) { this.headers.Range = `${from}-${to}`; return this; }
   limit(value) { this.params.set('limit', String(value)); return this; }
   single() { this.singleRow = true; this.headers.Accept = 'application/vnd.pgrst.object+json'; return this; }
   async execute() {
-    const result = await request(`/rest/v1/${this.resource}?${this.params}`, { method: this.method ?? 'GET', headers: this.headers });
+    const result = await request(`/rest/v1/${this.resource}?${this.params}`, { method: this.method ?? 'GET', headers: this.headers, ...(this.body !== undefined ? { body: this.body } : {}) });
     const contentRange = result.response?.headers.get('content-range');
     const count = contentRange ? Number(contentRange.split('/')[1]) : null;
     return { data: result.data, error: result.error, count: Number.isFinite(count) ? count : null };
