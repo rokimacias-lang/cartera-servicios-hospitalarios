@@ -17,58 +17,23 @@ const requireSigcas = (req, res, next) => {
   next();
 };
 
-router.use(requireSigcas);
+router.get('/catalogo/configuracion-funcional', requireSigcasBearer, async (req,res,next)=>{try{
+ const select='id,codigo,clasificacion,area,servicio,prestacion,prestacion_homologada,estado_homologacion,requiere_subprestacion,catalogo_configuracion_funcional!inner(requiere_atencion,opciones_atencion,permite_otra_atencion,requiere_jornada,opciones_jornada,permite_otra_jornada,permite_otros,tipo_otros,requiere_capacidad,categorias_capacidad,configuracion_especial)';
+ const p=new URLSearchParams({select,activo:'eq.true','catalogo_configuracion_funcional.activo':'eq.true',order:'clasificacion.asc,servicio.asc,orden.asc'});
+ const rows=await sigcasRest('catalogo_servicios?'+p.toString(),req.sigcasAccessToken);
+ res.json((rows||[]).map(r=>({...r,...(Array.isArray(r.catalogo_configuracion_funcional)?r.catalogo_configuracion_funcional[0]:r.catalogo_configuracion_funcional),catalogo_configuracion_funcional:undefined})));
+}catch(error){next(error);}});
 
-router.get('/catalogo/configuracion-funcional', async (_req, res, next) => {
-  try {
-    const { rows } = await sigcasPool.query(`
-      select
-        cs.id, cs.codigo, cs.clasificacion, cs.area, cs.servicio,
-        cs.prestacion, cs.prestacion_homologada, cs.estado_homologacion,
-        cs.requiere_subprestacion,
-        cf.requiere_atencion, cf.opciones_atencion, cf.permite_otra_atencion,
-        cf.requiere_jornada, cf.opciones_jornada, cf.permite_otra_jornada,
-        cf.permite_otros, cf.tipo_otros, cf.requiere_capacidad,
-        cf.categorias_capacidad, cf.configuracion_especial
-      from public.catalogo_servicios cs
-      join public.catalogo_configuracion_funcional cf on cf.catalogo_id = cs.id
-      where cs.activo = true and cf.activo = true
-      order by cs.clasificacion, cs.servicio, coalesce(cs.prestacion_homologada, cs.prestacion), cs.orden nulls last
-    `);
-    res.json(rows);
-  } catch (error) { next(error); }
-});
+router.get('/catalogo/:catalogoId/subprestaciones', requireSigcasBearer, async (req,res,next)=>{try{
+ const p=new URLSearchParams({select:'id,catalogo_id,grupo,subgrupo,nombre,codigo,orden',catalogo_id:'eq.'+req.params.catalogoId,activo:'eq.true',order:'grupo.asc,subgrupo.asc,orden.asc,nombre.asc'});
+ res.json(await sigcasRest('catalogo_subprestaciones?'+p.toString(),req.sigcasAccessToken));
+}catch(error){next(error);}});
 
-router.get('/catalogo/:catalogoId/subprestaciones', async (req, res, next) => {
-  try {
-    const { rows } = await sigcasPool.query(`
-      select id, catalogo_id, grupo, subgrupo, nombre, codigo, orden
-      from public.catalogo_subprestaciones
-      where catalogo_id = $1 and activo = true
-      order by grupo nulls first, subgrupo nulls first, orden nulls last, nombre
-    `, [req.params.catalogoId]);
-    res.json(rows);
-  } catch (error) { next(error); }
-});
-
-router.get('/carteras/:carteraId/items', async (req, res, next) => {
-  try {
-    const { rows } = await sigcasPool.query(`
-      select ci.*, cs.codigo, cs.servicio, coalesce(cs.prestacion_homologada, cs.prestacion) prestacion,
-        coalesce(jsonb_agg(distinct cim.modalidad) filter (where cim.id is not null), '[]'::jsonb) modalidades,
-        coalesce(jsonb_agg(distinct cis.subprestacion_id) filter (where cis.id is not null), '[]'::jsonb) subprestaciones
-      from public.cartera_items ci
-      left join public.catalogo_servicios cs on cs.id=ci.catalogo_id
-      left join public.cartera_item_modalidades cim on cim.cartera_item_id=ci.id
-      left join public.cartera_item_subprestaciones cis on cis.cartera_item_id=ci.id
-      where ci.cartera_id=$1
-      group by ci.id,cs.codigo,cs.servicio,cs.prestacion_homologada,cs.prestacion
-      order by ci.created_at
-    `, [req.params.carteraId]);
-    res.json(rows);
-  } catch (error) { next(error); }
-});
-
+router.get('/carteras/:carteraId/items', requireSigcasBearer, async (req,res,next)=>{try{
+ const p=new URLSearchParams({select:'id,cartera_id,catalogo_id,configuracion,estado_disponibilidad,created_at,catalogo_servicios(codigo,servicio,prestacion,prestacion_homologada),cartera_item_modalidades(modalidad),cartera_item_subprestaciones(subprestacion_id)',cartera_id:'eq.'+req.params.carteraId,order:'created_at.asc'});
+ const rows=await sigcasRest('cartera_items?'+p.toString(),req.sigcasAccessToken);
+ res.json((rows||[]).map(r=>({...r,codigo:r.catalogo_servicios?.codigo,servicio:r.catalogo_servicios?.servicio,prestacion:r.catalogo_servicios?.prestacion_homologada||r.catalogo_servicios?.prestacion,modalidades:(r.cartera_item_modalidades||[]).map(x=>x.modalidad),subprestaciones:(r.cartera_item_subprestaciones||[]).map(x=>x.subprestacion_id),catalogo_servicios:undefined,cartera_item_modalidades:undefined,cartera_item_subprestaciones:undefined})));
+}catch(error){next(error);}});
 
 router.get('/establecimientos/:establecimientoId/cartera-activa', requireSigcasBearer, async (req,res,next)=>{try{
  const p=new URLSearchParams({select:'id,establecimiento_id,periodo,version,estado,creada_por,created_at',establecimiento_id:'eq.'+req.params.establecimientoId,periodo:'eq.'+(req.query.periodo||new Date().getFullYear()),estado:'in.(BORRADOR,OBSERVADA)',order:'version.desc',limit:'1'});
