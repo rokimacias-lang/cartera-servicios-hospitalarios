@@ -17,9 +17,10 @@ export function InstitutionalLayout({ children }) {
         <div className="brand"><span className="brand__mark">S</span><div><strong>SIGCAS-MSP</strong><small>Versión 0.4</small></div></div>
         <nav aria-label="Navegación principal">
           <AppLink to="/">Inicio</AppLink>
+          {profile?.establecimiento_id && <AppLink to="/hospital/cartera">Cartera hospitalaria</AppLink>}
           {isCentralAdministrator(profile) && <AppLink to="/admin/asignacion-tipologia">Asignación Tipología/Nivel</AppLink>}
         </nav>
-        <p className="legacy-note">La cartera y demás funciones permanecen temporalmente en el frontend heredado.</p>
+        <p className="legacy-note">Migración modular SIGCAS-MSP en curso.</p>
       </aside>
       <div className="workspace">
         <header className="topbar">
