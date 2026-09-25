@@ -84,7 +84,7 @@ router.post('/establecimientos/:establecimientoId/carteras', requireSigcasBearer
  const versionParams=new URLSearchParams({select:'version',establecimiento_id:'eq.'+establecimientoId,periodo:'eq.'+periodo,order:'version.desc',limit:'1'});
  const versions=await sigcasRest('carteras?'+versionParams.toString(),req.sigcasAccessToken);
  const version=Number(versions?.[0]?.version||0)+1;
- const created=await sigcasRest('carteras',req.sigcasAccessToken,{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({establecimiento_id:establecimientoId,periodo,version,estado:'BORRADOR'})});
+ const created=await sigcasRest('carteras',req.sigcasAccessToken,{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({establecimiento_id:establecimientoId,periodo,version,estado:'BORRADOR',creada_por:req.sigcasUserId})});
  res.status(201).json(created?.[0]||null);
 }catch(error){next(error);}});
 
