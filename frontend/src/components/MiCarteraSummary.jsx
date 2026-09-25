@@ -1,0 +1,6 @@
+import React,{useEffect,useState}from'react';import{sigcasApi}from'../api/sigcasApi.js';
+const pretty=v=>String(v||'').replaceAll('_',' ');
+export default function MiCarteraSummary({carteraId,refreshKey=0}){const[rows,setRows]=useState([]),[error,setError]=useState('');
+useEffect(()=>{if(!carteraId)return;sigcasApi.getMiCartera(carteraId).then(setRows).catch(e=>setError(e.message))},[carteraId,refreshKey]);
+if(!carteraId)return <p style={{fontSize:12}}>Seleccione o cree una cartera para visualizar su configuración.</p>;
+return <div style={{marginTop:12}}>{error&&<p style={{fontSize:12}}>{error}</p>}<div style={{display:'flex',gap:10,flexWrap:'wrap',marginBottom:10}}><strong>Prestaciones configuradas: {rows.length}</strong><span>Disponibles: {rows.filter(x=>x.estado_disponibilidad==='DISPONIBLE').length}</span><span>Suspendidas: {rows.filter(x=>x.estado_disponibilidad==='TEMPORALMENTE_SUSPENDIDA').length}</span></div>{rows.map(x=><div key={x.id} style={{padding:9,borderBottom:'1px solid #ddd'}}><strong>{x.prestacion}</strong><div style={{fontSize:12}}>{x.servicio} · {pretty(x.estado_disponibilidad)}</div><div style={{fontSize:11}}>Modalidades: {(x.modalidades||[]).map(pretty).join(', ')||'—'} · Subprestaciones: {(x.subprestaciones||[]).length}</div></div>)}</div>}
