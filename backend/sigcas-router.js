@@ -70,6 +70,12 @@ router.get('/carteras/:carteraId/items', async (req, res, next) => {
 });
 
 
+router.get('/establecimientos/:establecimientoId/cartera-activa', requireSigcasBearer, async (req,res,next)=>{try{
+ const p=new URLSearchParams({select:'id,establecimiento_id,periodo,version,estado,creada_por,created_at',establecimiento_id:'eq.'+req.params.establecimientoId,periodo:'eq.'+(req.query.periodo||new Date().getFullYear()),estado:'in.(BORRADOR,OBSERVADA)',order:'version.desc',limit:'1'});
+ const rows=await sigcasRest('carteras?'+p.toString(),req.sigcasAccessToken);
+ res.json(rows?.[0]||null);
+}catch(error){next(error);}});
+
 router.post('/carteras/:carteraId/items', requireSigcasBearer, async (req, res, next) => {
   try {
     const b = req.body || {};
