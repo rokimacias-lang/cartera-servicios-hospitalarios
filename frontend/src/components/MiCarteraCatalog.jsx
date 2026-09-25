@@ -5,20 +5,29 @@ import { filterMiCarteraCatalog, miCarteraDisplayName } from '../domain/miCarter
 
 const keyOf = (...parts) => parts.map((x) => x || 'SIN_CLASIFICAR').join('::');
 
+const GROUP_ORDER = ['Administrativos', 'Apoyo Diagnóstico y Terapéutico', 'Asistencial'];
+const GROUP_ALIAS = {
+  'Apoyo Diagnóstico': 'Apoyo Diagnóstico y Terapéutico',
+  'Apoyo Terapéutico': 'Apoyo Diagnóstico y Terapéutico',
+  'Apoyo Diagnóstico y Terapéutico': 'Apoyo Diagnóstico y Terapéutico',
+  'Administrativos': 'Administrativos',
+  'Asistencial': 'Asistencial'
+};
+
 function groupCatalog(rows) {
   const root = new Map();
   for (const item of rows) {
-    const clasificacion = item.clasificacion || 'Sin clasificación';
-    const area = item.area || 'General';
-    const servicio = item.servicio || 'Sin servicio';
+    const clasificacion = GROUP_ALIAS[item.clasificacion] || item.clasificacion || 'Sin clasificación';
+    const servicio = item.servicio || item.area || 'Sin servicio';
     if (!root.has(clasificacion)) root.set(clasificacion, new Map());
-    const areas = root.get(clasificacion);
-    if (!areas.has(area)) areas.set(area, new Map());
-    const servicios = areas.get(area);
+    const servicios = root.get(clasificacion);
     if (!servicios.has(servicio)) servicios.set(servicio, []);
     servicios.get(servicio).push(item);
   }
-  return root;
+  return new Map([...root.entries()].sort(([a],[b]) => {
+    const ai = GROUP_ORDER.indexOf(a), bi = GROUP_ORDER.indexOf(b);
+    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi) || a.localeCompare(b, 'es');
+  }));
 }
 
 export default function MiCarteraCatalog({ onSelect }) {
@@ -67,49 +76,32 @@ export default function MiCarteraCatalog({ onSelect }) {
     {error && <p className="alert alert--error">{error}</p>}
     {!error && rows.length === 0 && <p className="sigcas-catalog__empty">No se encontraron prestaciones con los filtros seleccionados.</p>}
 
-    <div className="sigcas-tree">
-      {[...tree.entries()].map(([clasificacion, areas]) => {
+    <div className="sigcas-tree sigcas-tree--v7">
+      {[...tree.entries()].map(([clasificacion, services]) => {
         const cKey = keyOf(clasificacion);
         const cOpen = expanded(cKey);
-        const cCount = [...areas.values()].reduce((n, services) => n + [...services.values()].reduce((s, items) => s + items.length, 0), 0);
+        const cCount = [...services.values()].reduce((n, items) => n + items.length, 0);
         return <section className="sigcas-tree__classification" key={clasificacion}>
-          <button type="button" className="sigcas-tree__classification-button" onClick={() => toggle(cKey)} aria-expanded={cOpen}>
-            <span><strong>{clasificacion}</strong><small>{cCount} prestaciones</small></span>
-            <b>{cOpen ? '−' : '+'}</b>
+          <button type="button" className="sigcas-tree__classification-button sigcas-tree__classification-button--v7" onClick={() => toggle(cKey)} aria-expanded={cOpen}>
+            <span><strong>{clasificacion}</strong>{clasificacion === 'Administrativos' && <small>Caracterización administrativa · Ficha Institucional</small>}</span>
+            <b>{cOpen ? '⌄' : '›'}</b>
           </button>
-
           {cOpen && <div className="sigcas-tree__classification-body">
-            {[...areas.entries()].map(([area, services]) => {
-              const aKey = keyOf(clasificacion, area);
-              const aOpen = expanded(aKey);
-              const aCount = [...services.values()].reduce((n, items) => n + items.length, 0);
-              return <div className="sigcas-tree__area" key={aKey}>
-                <button type="button" className="sigcas-tree__area-button" onClick={() => toggle(aKey)} aria-expanded={aOpen}>
-                  <span><strong>{area}</strong><small>{aCount} prestaciones</small></span>
-                  <b>{aOpen ? '−' : '+'}</b>
+            {[...services.entries()].sort(([a],[b])=>a.localeCompare(b,'es')).map(([servicio, items]) => {
+              const sKey = keyOf(clasificacion, servicio);
+              const sOpen = expanded(sKey);
+              return <div className="sigcas-tree__service sigcas-tree__service--v7" key={sKey}>
+                <button type="button" className="sigcas-tree__service-button sigcas-tree__service-button--v7" onClick={() => toggle(sKey)} aria-expanded={sOpen}>
+                  <span><strong>{servicio}</strong>{items.length > 1 && <small>({items.length} prestaciones)</small>}</span>
+                  <b>{sOpen ? '⌄' : '›'}</b>
                 </button>
-
-                {aOpen && <div className="sigcas-tree__services">
-                  {[...services.entries()].map(([servicio, items]) => {
-                    const sKey = keyOf(clasificacion, area, servicio);
-                    const sOpen = expanded(sKey);
-                    return <div className="sigcas-tree__service" key={sKey}>
-                      <button type="button" className="sigcas-tree__service-button" onClick={() => toggle(sKey)} aria-expanded={sOpen}>
-                        <span><strong>{servicio}</strong><small>{items.length} prestaciones</small></span>
-                        <b>{sOpen ? '−' : '+'}</b>
-                      </button>
-
-                      {sOpen && <div className="sigcas-tree__prestations">
-                        {items.slice().sort((a,b) => miCarteraDisplayName(a).localeCompare(miCarteraDisplayName(b), 'es')).map((item) =>
-                          <button type="button" className="sigcas-tree__prestation" key={item.id}
-                            onClick={() => onSelect?.({ item, fields: buildMiCarteraFields(item, item) })}>
-                            <span>{miCarteraDisplayName(item)}</span>
-                            <small>Configurar prestación →</small>
-                          </button>
-                        )}
-                      </div>}
-                    </div>;
-                  })}
+                {sOpen && <div className="sigcas-tree__prestations">
+                  {items.slice().sort((a,b) => miCarteraDisplayName(a).localeCompare(miCarteraDisplayName(b), 'es')).map((item) =>
+                    <button type="button" className="sigcas-tree__prestation" key={item.id}
+                      onClick={() => onSelect?.({ item, fields: buildMiCarteraFields(item, item) })}>
+                      <span>{miCarteraDisplayName(item)}</span><small>Configurar →</small>
+                    </button>
+                  )}
                 </div>}
               </div>;
             })}
