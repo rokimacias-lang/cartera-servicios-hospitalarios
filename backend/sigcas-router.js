@@ -76,6 +76,18 @@ router.get('/establecimientos/:establecimientoId/cartera-activa', requireSigcasB
  res.json(rows?.[0]||null);
 }catch(error){next(error);}});
 
+router.post('/establecimientos/:establecimientoId/carteras', requireSigcasBearer, async (req,res,next)=>{try{
+ const establecimientoId=req.params.establecimientoId; const periodo=String(req.body?.periodo||new Date().getFullYear()).trim();
+ const existingParams=new URLSearchParams({select:'id,establecimiento_id,periodo,version,estado,creada_por,created_at',establecimiento_id:'eq.'+establecimientoId,periodo:'eq.'+periodo,estado:'in.(BORRADOR,OBSERVADA)',order:'version.desc',limit:'1'});
+ const existing=await sigcasRest('carteras?'+existingParams.toString(),req.sigcasAccessToken);
+ if(existing?.[0]) return res.status(200).json(existing[0]);
+ const versionParams=new URLSearchParams({select:'version',establecimiento_id:'eq.'+establecimientoId,periodo:'eq.'+periodo,order:'version.desc',limit:'1'});
+ const versions=await sigcasRest('carteras?'+versionParams.toString(),req.sigcasAccessToken);
+ const version=Number(versions?.[0]?.version||0)+1;
+ const created=await sigcasRest('carteras',req.sigcasAccessToken,{method:'POST',headers:{Prefer:'return=representation'},body:JSON.stringify({establecimiento_id:establecimientoId,periodo,version,estado:'BORRADOR'})});
+ res.status(201).json(created?.[0]||null);
+}catch(error){next(error);}});
+
 router.post('/carteras/:carteraId/items', requireSigcasBearer, async (req, res, next) => {
   try {
     const b = req.body || {};
