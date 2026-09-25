@@ -30,7 +30,7 @@ function groupCatalog(rows) {
   }));
 }
 
-export default function MiCarteraCatalog({ onSelect }) {
+export default function MiCarteraCatalog({ onSelect, onAdministrative }) {
   const [catalogo, setCatalogo] = useState([]);
   const [query, setQuery] = useState('');
   const [error, setError] = useState('');
@@ -86,7 +86,13 @@ export default function MiCarteraCatalog({ onSelect }) {
             <span><strong>{clasificacion}</strong>{clasificacion === 'Administrativos' && <small>Caracterización administrativa · Ficha Institucional</small>}</span>
             <b>{cOpen ? '⌄' : '›'}</b>
           </button>
-          {cOpen && <div className="sigcas-tree__classification-body">
+          {cOpen && clasificacion === 'Administrativos' && <div className="sigcas-admin-entry">
+            <button type="button" className="sigcas-admin-entry__button" onClick={() => onAdministrative?.()}>
+              <span><strong>Ficha Institucional Administrativa</strong><small>Proceso Gobernante · Admisiones y Estadística · Responsable de Calidad · Trabajo Social</small></span>
+              <b>Abrir ficha →</b>
+            </button>
+          </div>}
+          {cOpen && clasificacion !== 'Administrativos' && <div className="sigcas-tree__classification-body">
             {[...services.entries()].sort(([a],[b])=>a.localeCompare(b,'es')).map(([servicio, items]) => {
               const sKey = keyOf(clasificacion, servicio);
               const sOpen = expanded(sKey);
