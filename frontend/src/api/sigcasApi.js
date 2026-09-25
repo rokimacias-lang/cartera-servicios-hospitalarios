@@ -30,6 +30,9 @@ export const sigcasApi = {
   getCarteraActiva(establecimientoId, periodo = new Date().getFullYear()) {
     return request(`/establecimientos/${encodeURIComponent(establecimientoId)}/cartera-activa?periodo=${encodeURIComponent(periodo)}`, { auth: true });
   },
+  createCartera(establecimientoId, periodo = new Date().getFullYear()) {
+    return request(`/establecimientos/${encodeURIComponent(establecimientoId)}/carteras`, { method: 'POST', auth: true, body: JSON.stringify({ periodo: String(periodo) }) });
+  },
   getMiCartera(carteraId) {
     return request(`/carteras/${encodeURIComponent(carteraId)}/items`);
   },
