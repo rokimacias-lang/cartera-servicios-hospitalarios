@@ -49,6 +49,7 @@ class QueryBuilder {
   in(column, values) { this.params.append(column, `in.(${values.join(',')})`); return this; }
   insert(values) { this.method = 'POST'; this.body = JSON.stringify(values); this.headers.Prefer = 'return=representation'; return this; }
   ilike(column, value) { this.params.append(column, `ilike.${value}`); return this; }
+  not(column, operator, value) { this.params.append(column, `not.${operator}.${value}`); return this; }
   order(column, options = {}) { this.params.append('order', `${column}.${options.ascending === false ? 'desc' : 'asc'}`); return this; }
   range(from, to) { this.headers.Range = `${from}-${to}`; return this; }
   limit(value) { this.params.set('limit', String(value)); return this; }
