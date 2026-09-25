@@ -62,7 +62,14 @@ router.post('/carteras/:carteraId/items', requireSigcasBearer, async (req, res, 
         p_cartera_id: req.params.carteraId,
         p_catalogo_id: b.catalogo_id,
         p_estado_disponibilidad: b.estado_disponibilidad,
-        p_configuracion: b.configuracion || {},
+        p_configuracion: {
+          ...(b.configuracion || {}),
+          ...(b.atencion !== undefined ? { atencion: b.atencion } : {}),
+          ...(b.otra_atencion !== undefined ? { otra_atencion: b.otra_atencion } : {}),
+          ...(b.jornada !== undefined ? { jornada: b.jornada } : {}),
+          ...(b.otra_jornada !== undefined ? { otra_jornada: b.otra_jornada } : {}),
+          ...(b.capacidad !== undefined ? { capacidad: b.capacidad } : {})
+        },
         p_subprestaciones: b.subprestaciones || [],
         p_modalidades: b.modalidades || []
       })
