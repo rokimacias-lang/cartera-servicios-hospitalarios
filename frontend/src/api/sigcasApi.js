@@ -34,7 +34,7 @@ export const sigcasApi = {
     return request(`/establecimientos/${encodeURIComponent(establecimientoId)}/carteras`, { method: 'POST', auth: true, body: JSON.stringify({ periodo: String(periodo) }) });
   },
   getMiCartera(carteraId) {
-    return request(`/carteras/${encodeURIComponent(carteraId)}/items`);
+    return request(`/carteras/${encodeURIComponent(carteraId)}/items`, { auth: true });
   },
   saveCarteraItem(carteraId, payload) {
     return request(`/carteras/${encodeURIComponent(carteraId)}/items`, {
