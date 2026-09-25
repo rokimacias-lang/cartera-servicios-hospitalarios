@@ -22,10 +22,10 @@ async function request(path, options = {}) {
 
 export const sigcasApi = {
   getCatalogoConfiguracion() {
-    return request('/catalogo/configuracion-funcional');
+    return request('/catalogo/configuracion-funcional', { auth: true });
   },
   getSubprestaciones(catalogoId) {
-    return request(`/catalogo/${encodeURIComponent(catalogoId)}/subprestaciones`);
+    return request(`/catalogo/${encodeURIComponent(catalogoId)}/subprestaciones`, { auth: true });
   },
   getCarteraActiva(establecimientoId, periodo = new Date().getFullYear()) {
     return request(`/establecimientos/${encodeURIComponent(establecimientoId)}/cartera-activa?periodo=${encodeURIComponent(periodo)}`, { auth: true });
