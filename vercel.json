@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "installCommand": "echo 'Static SIGCAS preview - no dependency install'",
+  "buildCommand": "echo 'Static SIGCAS preview - no build'",
+  "outputDirectory": "preview/v0.7.9.2",
+  "framework": null,
+  "cleanUrls": true
+}
