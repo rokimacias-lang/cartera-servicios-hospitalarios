@@ -1,9 +1,7 @@
 {
   "version": 2,
-  "buildCommand": "npm --prefix frontend install && npm --prefix frontend run build",
-  "outputDirectory": "frontend/dist",
-  "framework": "vite",
-  "rewrites": [
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
-  ]
+  "buildCommand": null,
+  "outputDirectory": "preview/v0.7.9.2",
+  "framework": null,
+  "cleanUrls": true
 }
